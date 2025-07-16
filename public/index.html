@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Snake game</title>
+</head>
+
+<body>
+    <div class="root">
+        <header id="game-menu">
+            <div class="title">
+                <h1>Snake game<sup id="maxScore">0</sup></h1>
+            </div>
+            <form class="form">
+                <div class="form-group">
+                    <label for="size">Size:</label>
+                    <input type="range" id="size" name="size" min="5" max="50" step="5" value="5"
+                        onchange="updateTextInput(this);" list="size-options" />
+                    <datalist id="size-options">
+                        <option value="5" />
+                        <option value="10" />
+                        <option value="20" />
+                        <option value="25" />
+                        <option value="40" />
+                        <option value="50" />
+                    </datalist>
+                    <span><output id="sizeOutput"></output>PX</span>
+                </div>
+                <div class="form-group">
+                    <label for="difficult">Difficult:</label>
+                    <input type="range" id="difficult" name="difficult" min="1" max="99" value="1"
+                        onchange="updateTextInput(this);" />
+                    <span><output id="difficultOutput"></output> %</span>
+                </div>
+                <div class="form-group">
+                    <button id="start" type="button">Start</button>
+                </div>
+            </form>
+        </header>
+        <div id="canvas-container">
+            <canvas id="canvas-frame" width="1200" height="800"></canvas>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="game.js"></script>
+
+</html>

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "sans-serif";
+    background-color: #263238;
+    color: #fafafa;
+    position: fixed;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: .75em 0;
+}
+
+body .root {
+    height: 100vh;
+}
+
+header {
+    background-color: rgba(55, 71, 79, 0.85);
+    padding: 10px 0;
+    height: 100vh;
+    position: absolute;
+}
+
+header form {
+    display: inline-flex;
+    width: 100vw;
+}
+
+label,
+input {
+    margin-top: 2px;
+    display: block;
+    border: 0px;
+    cursor: pointer;
+}
+
+.form-group {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    width: 185px;
+    padding: 0 20px;
+    float: left;
+}
+
+canvas {
+    border: 1px solid white;
+    background-color: #2c3e50;
+}
+
+#canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+span {
+    text-align: center;
+    margin: 0;
+}
+
+.checkbox-wrapper {
+    margin-bottom: 5px;
+}
+
+.checkbox-wrapper input {
+    float: left;
+}
+
+.checkbox-wrapper label {
+    float: left;
+    margin: 0 5px;
+}
+
+button {
+    background-color: #455A64;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 10px;
+    color: #fafafa;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #546E7A;
+    outline: 2px solid #263238;
+}
